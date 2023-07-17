@@ -1,0 +1,14 @@
+.sub_header { display: flex; justify-content: space-between; color: #fff; padding: 10px 30px; align-items: center; border-bottom: 1px solid #424247; } 
+.logo a { font-family: 'Tmon'; color:#fff; font-size: 24px; } 
+.logo img { vertical-align: middle; margin-right: 5px; } 
+.logo span { margin-right: 5px; } 
+
+.title { font-family: 'scdream4'; font-size: 24px; margin-left: 66px; } 
+
+.header_right { display: flex; align-items: center; font-size: 13px; background-color: rgba(75, 74, 82,0.3); padding: 10px 15px; border-radius: 5px; } 
+.header_right div { margin: 0 5px; } 
+.header_right div:nth-child(1):after { content: "|"; opacity:0.2; padding: 0 0 0 10px; } 
+.header_right div:nth-child(3)::after { content: ""; } 
+.refresh { background-color: #01c3a8; color: #fff; padding:4px 10px; border-radius: 5px; cursor: pointer; line-height: 24px; } 
+.refresh img { vertical-align: top; margin-right: 5px; } 
+.logout { border: 1px solid rgba(255, 255, 255,0.2); color: #fff; padding: 7px 15px; border-radius: 5px; cursor: pointer; } 

@@ -1,0 +1,104 @@
+* {
+  /* 초기화 */
+  margin: 0;
+  padding: 0;
+}
+html, body { height: 100%; font-family: 'Noto Sans KR'; color: rgb(0, 0, 0); padding: 0; margin: 0; } 
+.container {
+  /* 너비 고정 and 중앙 정렬 */
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  /* 그리드 구성하기 */
+  display: grid;
+  grid-template: 70px 1fr 70px / 200px 1fr;
+
+  /* 1. 원하는 형태를 문자열로 구성한 다음... */
+  grid-template-areas:
+      'header header'
+      'aside content'
+      'footer footer';
+}
+
+[class *=cell] {
+  box-sizing: border-box;
+  border: 1px solid rgb(155, 138, 138);
+  padding: 10px;
+}
+
+.cell-header {
+  grid-area: header;
+  display: flex; justify-content: space-between; color: rgb(31, 28, 28); padding: 10px 30px; align-items: center; border-bottom: 1px solid #424247;
+}
+
+.cell-header a {
+  display: grid;
+  align-items: center;
+}
+
+.cell-aside {
+  grid-area: aside;
+}
+
+.cell-content {
+  grid-area: content;
+}
+
+.cell-footer {
+  grid-area: footer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pagination li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+ul.pagination li:first-child{
+  border-radius: 5px 0 0 5px;
+}
+
+ul.pagination li:last-child{
+  border-radius: 0 5px 5px 0;
+}
+
+ul.pagination li a {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 1rem;
+}
+
+ul.pagination li.active a {
+  color: white;
+}
+
+ul.pagination li.active {
+  background-color: #337ab7;
+}
+
+ul.pagination li a:hover,
+ul.pagination li a.active {
+  color: blue;
+}
+
+.page-selection {
+  width: 48px;
+  height: 30px;
+  color: #337ab7;
+}
