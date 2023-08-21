@@ -4,16 +4,15 @@
   padding: 0;
 }
 html, body { height: 100%; font-family: 'Noto Sans KR'; color: rgb(0, 0, 0); padding: 0; margin: 0; } 
+
 .container {
-  /* 너비 고정 and 중앙 정렬 */
   width: 960px;
   margin: 0 auto;
   height: 100%;
-  /* 그리드 구성하기 */
   display: grid;
   grid-template: 70px 1fr 70px / 200px 1fr;
 
-  /* 1. 원하는 형태를 문자열로 구성한 다음... */
+ 
   grid-template-areas:
       'header header'
       'aside content'

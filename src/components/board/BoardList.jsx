@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//test
+
 const Board = React.memo(function Board({board,disableBoard}) {
-    
+    console.log("board 리랜더")
     return (
         <tr>
             <td>{board.no}</td>
             <td>
-                <Link to={`/board/detail/${board.code}`}>{board.title}</Link>
+                <Link to={`/board/detail?no=${board.no}`}>{board.title}</Link>
             </td>
             <td>{board.author}</td>
             <td>{board.regDt}</td>
@@ -19,9 +21,8 @@ const Board = React.memo(function Board({board,disableBoard}) {
 });
 
 function BoardList({boards,disableBoard}) { 
-    console.log('랜더링!!!')
     return (
-        <table>
+        <table className="table table-secondary table=striped">
             <thead>
             <tr>
                 <th>번호</th>

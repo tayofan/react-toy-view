@@ -2,9 +2,10 @@ import React from 'react';
 import SelectBox from './SelectBox';
 import styles from '../../css/common/Search.module.css';
 
-function SearchBox({options, inputs, onChange, onSearch}) {
+function SearchBox({children, options, inputs, onChange, onSearch}) {
     return (
         <div className={styles.Box}>
+            {children}
             <SelectBox 
                 name={'type'}
                 options={options} 

@@ -8,8 +8,4 @@
 .snb ul li a.M_on { color: rgb(12, 11, 11); font-weight:bold; } 
 .snb ul li a::before { margin-bottom:13px; } 
 .snb ul li a:hover::before { box-shadow:0 0 10px rgba(255, 255, 255, 0.4); } 
-.snb ul li a.M_on::before { background-color:#000 !important; box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); } 
-/* .snb ul li:nth-child(1) a::before { display: block; content: ""; width:50px; height:50px; border-radius: 5px; background:#2d2d31 url("../images/sub/icon_menu01.png") no-repeat center; } 
-.snb ul li:nth-child(2) a::before { display: block; content: ""; width:50px; height:50px; border-radius: 5px; background:#2d2d31 url("../images/sub/icon_menu02.png") no-repeat center; } 
-.snb ul li:nth-child(3) a::before { display: block; content: ""; width:50px; height:50px; border-radius: 5px; background:#2d2d31 url("../images/sub/icon_menu03.png") no-repeat center; }
-.snb ul li:nth-child(4) a::before { display: block; content: ""; width:50px; height:50px; border-radius: 5px; background:#2d2d31 url("../images/sub/icon_menu04.png") no-repeat center; } */
+.snb ul li a.M_on::before { background-color:#000 !important; box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); }
